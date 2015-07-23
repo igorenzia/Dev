@@ -1,0 +1,11 @@
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\bin\Release\vk_player.exe.config
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\bin\Release\vk_player.exe
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\bin\Release\vk_player.pdb
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\bin\Release\NAudio.dll
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\obj\Release\vk_player.MainForms.resources
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\obj\Release\vk_player.auth_Forms.resources
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\obj\Release\vk_player.Properties.Resources.resources
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\obj\Release\vk_player.csproj.GenerateResource.Cache
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\obj\Release\vk_player.exe
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\obj\Release\vk_player.pdb
+C:\Users\b\Documents\Visual Studio 2013\Projects\vk_player\vk_player\obj\Release\vk_player.csprojResolveAssemblyReference.cache

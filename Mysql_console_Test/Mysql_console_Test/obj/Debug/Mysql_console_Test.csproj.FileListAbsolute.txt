@@ -1,0 +1,6 @@
+c:\users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\bin\Debug\Mysql_console_Test.exe.config
+c:\users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\bin\Debug\Mysql_console_Test.exe
+c:\users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\bin\Debug\Mysql_console_Test.pdb
+c:\users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\obj\Debug\Mysql_console_Test.csprojResolveAssemblyReference.cache
+c:\users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\obj\Debug\Mysql_console_Test.exe
+c:\users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\obj\Debug\Mysql_console_Test.pdb

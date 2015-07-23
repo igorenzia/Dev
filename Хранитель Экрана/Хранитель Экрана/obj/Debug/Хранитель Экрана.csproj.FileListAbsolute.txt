@@ -1,0 +1,9 @@
+c:\users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\bin\Debug\Хранитель Экрана.exe.config
+c:\users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\bin\Debug\Хранитель Экрана.exe
+c:\users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\bin\Debug\Хранитель Экрана.pdb
+c:\users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Debug\Хранитель Экрана.csprojResolveAssemblyReference.cache
+c:\users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Debug\Хранитель_Экрана.Properties.Resources.resources
+c:\users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Debug\Хранитель Экрана.csproj.GenerateResource.Cache
+c:\users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Debug\Хранитель Экрана.exe
+c:\users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Debug\Хранитель Экрана.pdb
+C:\Users\b\documents\visual studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Debug\Хранитель_Экрана.MainForm.resources

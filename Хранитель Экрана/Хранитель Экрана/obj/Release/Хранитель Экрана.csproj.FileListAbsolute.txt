@@ -1,0 +1,8 @@
+C:\Users\b\Documents\Visual Studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\bin\Release\Хранитель Экрана.exe.config
+C:\Users\b\Documents\Visual Studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\bin\Release\Хранитель Экрана.exe
+C:\Users\b\Documents\Visual Studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\bin\Release\Хранитель Экрана.pdb
+C:\Users\b\Documents\Visual Studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Release\Хранитель_Экрана.MainForm.resources
+C:\Users\b\Documents\Visual Studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Release\Хранитель_Экрана.Properties.Resources.resources
+C:\Users\b\Documents\Visual Studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Release\Хранитель Экрана.csproj.GenerateResource.Cache
+C:\Users\b\Documents\Visual Studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Release\Хранитель Экрана.exe
+C:\Users\b\Documents\Visual Studio 2013\Projects\Хранитель Экрана\Хранитель Экрана\obj\Release\Хранитель Экрана.pdb

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response list="true">
+ <user>
+  <uid>25422596</uid>
+  <first_name>Игорь</first_name>
+  <last_name>Белоусов</last_name>
+  <sex>2</sex>
+  <domain>igorenzia</domain>
+  <screen_name>igorenzia</screen_name>
+  <bdate>1.8</bdate>
+  <city>22</city>
+  <country>1</country>
+  <timezone>3</timezone>
+  <photo_50>http://cs623128.vk.me/v623128596/2693e/-DY-czzQncI.jpg</photo_50>
+  <photo_100>http://cs623128.vk.me/v623128596/2693d/6-pRvaMaTjs.jpg</photo_100>
+  <photo_200>http://cs623128.vk.me/v623128596/2693c/KZaV9IY-Flg.jpg</photo_200>
+  <photo_max>http://cs623128.vk.me/v623128596/2693c/KZaV9IY-Flg.jpg</photo_max>
+  <photo_200_orig>http://cs623128.vk.me/v623128596/2693b/bNQ3fKadAgQ.jpg</photo_200_orig>
+  <photo_max_orig>http://cs623128.vk.me/v623128596/2693b/bNQ3fKadAgQ.jpg</photo_max_orig>
+  <photo_id>25422596_364205719</photo_id>
+  <has_mobile>1</has_mobile>
+  <online>1</online>
+  <can_post>1</can_post>
+  <can_see_all_posts>1</can_see_all_posts>
+  <can_see_audio>1</can_see_audio>
+  <can_write_private_message>1</can_write_private_message>
+  <mobile_phone>89509626298</mobile_phone>
+  <home_phone/>
+  <skype>igorenzia</skype>
+  <site>http://robogluk.orisale.ru/</site>
+  <status>==</status>
+  <last_seen>
+   <time>1437331784</time>
+   <platform>7</platform>
+  </last_seen>
+  <common_count>106</common_count>
+  <counters>
+    <albums>19</albums>
+    <videos>311</videos>
+    <audios>390</audios>
+    <notes>0</notes>
+    <photos>614</photos>
+    <groups>330</groups>
+    <gifts>9</gifts>
+    <friends>106</friends>
+    <online_friends>21</online_friends>
+    <user_photos>14</user_photos>
+    <user_videos>4</user_videos>
+    <followers>47</followers>
+    <subscriptions>0</subscriptions>
+    <pages>162</pages>
+  </counters>
+  <occupation>
+     <type>work</type>
+     <name>ГБУЗ АО АГКБ №4</name>
+  </occupation>
+  <university>0</university>
+  <university_name/>
+  <faculty>0</faculty>
+  <faculty_name/>
+  <graduation>0</graduation>
+  <relation>4</relation>
+  <relation_partner>
+      <id>8083264</id>
+      <first_name>Аня</first_name>
+      <last_name>Белоусова</last_name>
+  </relation_partner>
+  <personal>
+  </personal>
+  <interests/>
+  <music/>
+  <activities>член избирательного участка №154</activities>
+  <movies>фильмы стивена кинга и спилберга</movies>
+  <tv/>
+  <books/>
+  <games>Сакред, крутой сэм:) готика 2  и WOW</games>
+  <universities>
+  </universities>
+  <schools list="true">
+         <school>
+          <id>465360</id>
+          <country>1</country>
+          <city>22</city>
+          <name>Школа №95</name>
+          <year_to>2000</year_to>
+          <class/>
+         </school>
+         <school>
+          <id>112480</id>
+          <country>1</country>
+          <city>22</city>
+          <name>Кооперативный техникум</name>
+          <year_from>2010</year_from>
+          <year_to>2014</year_to>
+          <year_graduated>2014</year_graduated>
+          <class/>
+          <speciality>Экономика бухгалтерский учет</speciality>
+          <type>10</type>
+          <type_str>Техникум</type_str>
+         </school>
+  </schools>
+  <about/>
+  <relatives list="true">
+         <relative>
+          <uid>7014076</uid>
+          <type>sibling</type>
+         </relative>
+         <relative>
+          <uid>161020394</uid>
+          <type>parent</type>
+         </relative>
+  </relatives>
+  <quotes/>
+ </user>
+</response>

@@ -1,0 +1,5 @@
+C:\Users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\bin\Release\Mysql_console_Test.exe.config
+C:\Users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\bin\Release\Mysql_console_Test.exe
+C:\Users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\bin\Release\Mysql_console_Test.pdb
+C:\Users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\obj\Release\Mysql_console_Test.exe
+C:\Users\b\documents\visual studio 2013\Projects\Mysql_console_Test\Mysql_console_Test\obj\Release\Mysql_console_Test.pdb
