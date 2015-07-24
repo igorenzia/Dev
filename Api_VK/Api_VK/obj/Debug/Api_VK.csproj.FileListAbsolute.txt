@@ -20,3 +20,5 @@ C:\Users\b\Documents\Visual Studio 2013\Projects\Api_VK\Api_VK\obj\Debug\Api_VK.
 C:\Users\b\Documents\Visual Studio 2013\Projects\Api_VK\Api_VK\obj\Debug\Api_VK.Properties.Resources.resources
 C:\Users\b\Documents\Visual Studio 2013\Projects\Api_VK\Api_VK\obj\Debug\Api_VK.Test_Form.resources
 C:\Users\b\Documents\Visual Studio 2013\Projects\Api_VK\Api_VK\obj\Debug\Api_VK.csproj.GenerateResource.Cache
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.exe
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.pdb
