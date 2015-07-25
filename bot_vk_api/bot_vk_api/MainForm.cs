@@ -86,7 +86,7 @@ namespace bot_vk_api
                 {
                     txt.Text += ms.mid + " - " + name( ms.uid) + " - " + dt.AddSeconds(Convert.ToInt32(ms.date)) + " - " + ms.body + Environment.NewLine;
                     if (ms.body.Length > 3)
-                        setmess("я дедушка эхо ты мне написал:" , ms.body , ms.uid);
+                        setmess("Все говорят :" , ms.body , ms.uid);
                 }
 
             }
@@ -103,7 +103,8 @@ namespace bot_vk_api
 
         private void setmess(string p, string body , string id)
         {
-            File.WriteAllText("set_ms.xml", web.DownloadString("https://api.vk.com/method/messages.send.xml?user_id=" + id + "&message="+p+body + "&access_token=" + token));
+            string p2 = " а ты купи слона!";
+            File.WriteAllText("set_ms.xml", web.DownloadString("https://api.vk.com/method/messages.send.xml?user_id=" + id + "&message="+p+body +p2 + "&access_token=" + token));
 
             //url = new Uri("https://api.vk.com/method/messages.send.xml?user_id=" + id + "&message="+p+body + "&access_token=" + token);
 
@@ -113,6 +114,20 @@ namespace bot_vk_api
 
         private void cmd_get_Click(object sender, EventArgs e)
         {
+            tm.Enabled = !tm.Enabled;
+            if (tm.Enabled)
+            {
+                cmd_get.Text = "таймер включен";
+            }
+            else
+            {
+                cmd_get.Text = "таймер выключен";
+            }
+        }
+
+        private void tm_Tick(object sender, EventArgs e)
+        {
+            txt.Text = "";
             getApiVk("messages.get.xml?filters=1");
         }
 

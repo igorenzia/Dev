@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_status = new System.Windows.Forms.Label();
             this.txt = new System.Windows.Forms.TextBox();
             this.cmd_get = new System.Windows.Forms.Button();
+            this.tm = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lbl_status
@@ -56,9 +58,14 @@
             this.cmd_get.Name = "cmd_get";
             this.cmd_get.Size = new System.Drawing.Size(156, 23);
             this.cmd_get.TabIndex = 2;
-            this.cmd_get.Text = "отправить";
+            this.cmd_get.Text = "запустить\r\n";
             this.cmd_get.UseVisualStyleBackColor = true;
             this.cmd_get.Click += new System.EventHandler(this.cmd_get_Click);
+            // 
+            // tm
+            // 
+            this.tm.Interval = 4000;
+            this.tm.Tick += new System.EventHandler(this.tm_Tick);
             // 
             // MainForm
             // 
@@ -81,6 +88,7 @@
         private System.Windows.Forms.Label lbl_status;
         private System.Windows.Forms.TextBox txt;
         private System.Windows.Forms.Button cmd_get;
+        private System.Windows.Forms.Timer tm;
     }
 }
 
