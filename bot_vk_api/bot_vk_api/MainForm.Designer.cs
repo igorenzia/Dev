@@ -30,6 +30,7 @@
         {
             this.lbl_status = new System.Windows.Forms.Label();
             this.txt = new System.Windows.Forms.TextBox();
+            this.cmd_get = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_status
@@ -49,11 +50,22 @@
             this.txt.Size = new System.Drawing.Size(534, 245);
             this.txt.TabIndex = 1;
             // 
+            // cmd_get
+            // 
+            this.cmd_get.Location = new System.Drawing.Point(393, 68);
+            this.cmd_get.Name = "cmd_get";
+            this.cmd_get.Size = new System.Drawing.Size(156, 23);
+            this.cmd_get.TabIndex = 2;
+            this.cmd_get.Text = "отправить";
+            this.cmd_get.UseVisualStyleBackColor = true;
+            this.cmd_get.Click += new System.EventHandler(this.cmd_get_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 354);
+            this.Controls.Add(this.cmd_get);
             this.Controls.Add(this.txt);
             this.Controls.Add(this.lbl_status);
             this.Name = "MainForm";
@@ -68,6 +80,7 @@
 
         private System.Windows.Forms.Label lbl_status;
         private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.Button cmd_get;
     }
 }
 

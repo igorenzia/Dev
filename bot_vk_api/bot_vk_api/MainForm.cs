@@ -21,6 +21,7 @@ namespace bot_vk_api
         Uri url;
         MemoryStream M_stream;
         XDocument Xdoc;
+        XmlReader reader;
         DateTime dt;
         public MainForm()
         {
@@ -35,7 +36,26 @@ namespace bot_vk_api
             auth_form frm = new auth_form();
             frm.ShowDialog();
             token = frm.token;
-            getApiVk("messages.getDialogs.xml?count=1");
+            getApiVk("messages.get.xml?filters=1");
+        }
+
+        string name(string name)
+        {
+            File.WriteAllText("name.xml", web.DownloadString("https://api.vk.com/method/users.get.xml?user_ids=" + name + "&access_token=" + token));
+
+            url = new Uri("https://api.vk.com/method/users.get.xml?user_ids=" + name + "&access_token=" + token);
+
+            M_stream = new MemoryStream(web.DownloadData(url));
+            reader = XmlReader.Create(M_stream);
+
+            while (reader.Read())
+            {
+                if ((reader.NodeType == XmlNodeType.Element) && (reader.Name == "first_name"))
+                    return reader.ReadElementString();
+
+            }
+
+            return "0";
         }
 
         private void getApiVk(string query)
@@ -64,7 +84,9 @@ namespace bot_vk_api
 
                 foreach (var ms in messs)
                 {
-                    txt.Text += ms.mid + " - " + ms.uid + " - " + dt.AddSeconds(Convert.ToInt32(ms.date)) + " - " + ms.body + Environment.NewLine;
+                    txt.Text += ms.mid + " - " + name( ms.uid) + " - " + dt.AddSeconds(Convert.ToInt32(ms.date)) + " - " + ms.body + Environment.NewLine;
+                    if (ms.body.Length > 3)
+                        setmess("я дедушка эхо ты мне написал:" , ms.body , ms.uid);
                 }
 
             }
@@ -77,6 +99,21 @@ namespace bot_vk_api
 
             //reader = XmlReader.Create(M_stream);
 
+        }
+
+        private void setmess(string p, string body , string id)
+        {
+            File.WriteAllText("set_ms.xml", web.DownloadString("https://api.vk.com/method/messages.send.xml?user_id=" + id + "&message="+p+body + "&access_token=" + token));
+
+            //url = new Uri("https://api.vk.com/method/messages.send.xml?user_id=" + id + "&message="+p+body + "&access_token=" + token);
+
+            //M_stream = new MemoryStream(web.DownloadData(url));
+            //reader = XmlReader.Create(M_stream);
+        }
+
+        private void cmd_get_Click(object sender, EventArgs e)
+        {
+            getApiVk("messages.get.xml?filters=1");
         }
 
 
