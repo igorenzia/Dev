@@ -38,23 +38,23 @@
             // lbl_status
             // 
             this.lbl_status.AutoSize = true;
-            this.lbl_status.Location = new System.Drawing.Point(13, 12);
+            this.lbl_status.Location = new System.Drawing.Point(339, 9);
             this.lbl_status.Name = "lbl_status";
-            this.lbl_status.Size = new System.Drawing.Size(35, 13);
+            this.lbl_status.Size = new System.Drawing.Size(13, 13);
             this.lbl_status.TabIndex = 0;
-            this.lbl_status.Text = "label1";
+            this.lbl_status.Text = "--";
             // 
             // txt
             // 
-            this.txt.Location = new System.Drawing.Point(15, 97);
+            this.txt.Location = new System.Drawing.Point(15, 33);
             this.txt.Multiline = true;
             this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(534, 245);
+            this.txt.Size = new System.Drawing.Size(534, 309);
             this.txt.TabIndex = 1;
             // 
             // cmd_get
             // 
-            this.cmd_get.Location = new System.Drawing.Point(393, 68);
+            this.cmd_get.Location = new System.Drawing.Point(393, 4);
             this.cmd_get.Name = "cmd_get";
             this.cmd_get.Size = new System.Drawing.Size(156, 23);
             this.cmd_get.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             // tm
             // 
-            this.tm.Interval = 4000;
+            this.tm.Interval = 2000;
             this.tm.Tick += new System.EventHandler(this.tm_Tick);
             // 
             // MainForm
@@ -76,7 +76,7 @@
             this.Controls.Add(this.txt);
             this.Controls.Add(this.lbl_status);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Бот Эхо";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

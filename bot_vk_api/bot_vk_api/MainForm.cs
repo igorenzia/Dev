@@ -85,8 +85,8 @@ namespace bot_vk_api
                 foreach (var ms in messs)
                 {
                     txt.Text += ms.mid + " - " + name( ms.uid) + " - " + dt.AddSeconds(Convert.ToInt32(ms.date)) + " - " + ms.body + Environment.NewLine;
-                    if (ms.body.Length > 3)
-                        setmess("Все говорят :" , ms.body , ms.uid);
+                    
+                        setmess("Все говорят: " , ms.body , ms.uid);
                 }
 
             }
@@ -127,6 +127,15 @@ namespace bot_vk_api
 
         private void tm_Tick(object sender, EventArgs e)
         {
+            if (lbl_status.Text=="tick")
+            {
+                lbl_status.Text = "tack";
+            }
+            else
+            {
+                lbl_status.Text = "tick";
+            }
+
             txt.Text = "";
             getApiVk("messages.get.xml?filters=1");
         }
