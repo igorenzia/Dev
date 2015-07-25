@@ -31,3 +31,5 @@ C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.Form_Get_UID.resources
 C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.Properties.Resources.resources
 C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.Test_Form.resources
 C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.csproj.GenerateResource.Cache
+C:\Users\igorenzia\Documents\vk_api\Dev\Api_VK\Api_VK\obj\Debug\Api_VK.exe
+C:\Users\igorenzia\Documents\vk_api\Dev\Api_VK\Api_VK\obj\Debug\Api_VK.pdb
