@@ -22,3 +22,12 @@ C:\Users\b\Documents\Visual Studio 2013\Projects\Api_VK\Api_VK\obj\Debug\Api_VK.
 C:\Users\b\Documents\Visual Studio 2013\Projects\Api_VK\Api_VK\obj\Debug\Api_VK.csproj.GenerateResource.Cache
 C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.exe
 C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.pdb
+C:\repository\Api_VK\Api_VK\bin\Debug\Api_VK.exe
+C:\repository\Api_VK\Api_VK\bin\Debug\Api_VK.pdb
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.csprojResolveAssemblyReference.cache
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.Auth_Form.resources
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.MainForm.resources
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.Form_Get_UID.resources
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.Properties.Resources.resources
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.Test_Form.resources
+C:\repository\Api_VK\Api_VK\obj\Debug\Api_VK.csproj.GenerateResource.Cache

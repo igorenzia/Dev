@@ -7,6 +7,8 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Xml;
+using System.Data;
+using System.Collections.Generic;
 
 namespace Api_VK
 {
@@ -15,9 +17,15 @@ namespace Api_VK
     {
         #region // объявление переменных
         public delegate void helper(string str);
-        public delegate void helpers(string str1, string str2);
+
+
+
+        public delegate void helperDT(DataTable dt);
+        public delegate void helperS2(string str1, string str2);
+
         helper guiview;
-        helpers guiviewTime;
+        helperS2 guiviewTime;
+        helperDT getDT;
         XmlDocument Xdoc;
         XmlReader Xreader;
         byte[] bytes;
@@ -25,8 +33,9 @@ namespace Api_VK
         string str_temp;
         MemoryStream M_stream;
         WebClient web;
-
+        DataTable dt;
         Thread t;
+        string uid, name, Lname, photo, phone;
 
         Uri url;
         string fields = "fields=sex,bdate,city,country,photo_50,photo_100,photo_200_orig,photo_200,photo_400_orig,photo_max,photo_max_orig,photo_id,online,online_mobile,domain,has_mobile,contacts,connections,site,education,universities,schools,can_post,can_see_all_posts,can_see_audio,can_write_private_message,status,last_seen,common_count,relation,relatives,counters,screen_name,maiden_name,timezone,occupation,activities,interests,music,movies,tv,books,games,about,quotes,personal,friends_status ";
@@ -39,10 +48,19 @@ namespace Api_VK
         public MainForm()
         {
             InitializeComponent();
+            init();
+
+        }
+
+        private void init()
+        {
             guiview = new helper(guilbl);
-            guiviewTime = new helpers(gui_txt_time);
+            guiviewTime = new helperS2(gui_txt_time);
+            getDT = new helperDT(Dataview);
             web = new WebClient();
             Xdoc = new XmlDocument();
+            uid = name = Lname = phone = photo = uid = "";
+            dt = new DataTable();
 
         }
 
@@ -85,11 +103,22 @@ namespace Api_VK
 
         private void cmd_broot_Click(object sender, EventArgs e)
         {
+            cmd_broot.Enabled = false;
+            dt.Columns.Add("uid");
+            dt.Columns.Add("name");
+            dt.Columns.Add("Lname");
+            dt.Columns.Add("Phone");
+            dt.Columns.Add("Photo");
 
             t = new Thread(broot);
             t.IsBackground = true;
             t.Start();
 
+        }
+
+        void Dataview(DataTable dt)
+        {
+            data.DataSource = dt;
         }
 
         private void broot()
@@ -104,7 +133,7 @@ namespace Api_VK
                 sw.Start();
                 for (int i = 0; i <= 100; i++)
                 {
-                    
+
                     sw1.Restart();
                     //sw1.Start();
                     web.Encoding = Encoding.UTF8;
@@ -116,34 +145,37 @@ namespace Api_VK
 
                     while (Xreader.Read())
                     {
-                        
+
                         if ((Xreader.NodeType == XmlNodeType.Element) && Xreader.Name == "uid")
-                            str_temp = Xreader.ReadElementString();
+                            uid = Xreader.ReadElementString();
 
                         if ((Xreader.NodeType == XmlNodeType.Element) && Xreader.Name == "first_name")
-                            str_temp += " | " + Xreader.ReadElementString();
+                            name = Xreader.ReadElementString();
 
                         if ((Xreader.NodeType == XmlNodeType.Element) && Xreader.Name == "last_name")
-                            str_temp += " | " + Xreader.ReadElementString();
+                            Lname = Xreader.ReadElementString();
 
                         if ((Xreader.NodeType == XmlNodeType.Element) && Xreader.Name == "mobile_phone")
-                            str_temp += " | " + Xreader.ReadElementString();
+                            phone = Xreader.ReadElementString();
 
                         if ((Xreader.NodeType == XmlNodeType.Element) && Xreader.Name == "photo_200_orig")
-                            str_temp += " | " + Xreader.ReadElementString();
+                            photo = Xreader.ReadElementString();
 
 
 
                     }
 
 
-                    File.AppendAllText("users.txt", str_temp + Environment.NewLine);
-                    str_temp = "";
+                    //File.AppendAllText("users.txt", str_temp + Environment.NewLine);
+                    dt.Rows.Add(uid, name, Lname, phone, photo);
+                    uid = name = Lname = phone = photo = uid = "";
+
                     sw1.Stop();
 
 
                     Invoke(guiview, i.ToString());
                     Invoke(guiviewTime, i.ToString(), sw1.Elapsed.ToString());
+
 
 
                 }
@@ -153,8 +185,9 @@ namespace Api_VK
                 MessageBox.Show(ex.Message);
             }
             sw.Stop();
+            Invoke(getDT, dt);
             MessageBox.Show(sw.Elapsed.ToString());
-            File.AppendAllText("users.txt", " время затраченое на создание файла " + sw.Elapsed.ToString());
+            // File.AppendAllText("users.txt", " время затраченое на создание файла " + sw.Elapsed.ToString());
 
         }
 
